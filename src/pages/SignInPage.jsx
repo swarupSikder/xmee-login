@@ -4,7 +4,7 @@ import intro_banner from '../assets/intro_banner.png'
 import { FaFacebookF, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router';
 
-const Login = () => {
+const SignInPage = () => {
     return (
         <div className='min-h-lvh md:min-h-screen bg-contain bg-left bg-no-repeat relative' style={{ backgroundImage: `url(${shape1})` }}>
 
@@ -24,7 +24,7 @@ const Login = () => {
 
                     <p className='font-semibold text-sky-700 lg:mt-24 text-center lg:text-left'>
                         If you don't have an account, <br />
-                        please <Link className='text-primary underline'>SIGN UP</Link>
+                        please <Link to={'/auth/sign-up'} className='text-primary underline'>SIGN UP</Link>
                     </p>
                 </div>
 
@@ -61,4 +61,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignInPage;
