@@ -21,7 +21,7 @@ const SignInPage = () => {
                 <img src={intro_banner} alt="" className='w-[400px] -ml-48' />
             </motion.div>
 
-            <div className='container mx-auto min-h-screen p-8 md:p-24 flex flex-col-reverse lg:flex-row items-center justify-between'>
+            <div className='container mx-auto min-h-screen p-8 md:p-24 flex flex-col-reverse lg:flex-row items-center justify-around lg:justify-between'>
                 {/* Left Part with animation */}
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}

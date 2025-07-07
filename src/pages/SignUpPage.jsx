@@ -21,7 +21,7 @@ const SignUpPage = () => {
                 <img src={intro_banner} alt="" className='w-[400px] -ml-48' />
             </motion.div>
 
-            <div className='container mx-auto min-h-screen p-8 md:p-24 flex flex-col-reverse lg:flex-row items-center justify-between'>
+            <div className='container mx-auto min-h-screen p-8 md:p-24 flex flex-col-reverse lg:flex-row items-center justify-around lg:justify-between'>
                 {/* Animated Left Side */}
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
@@ -55,6 +55,11 @@ const SignUpPage = () => {
                             Sign Up with <span className='text-secondary'>Email</span>
                         </h3>
                         <input
+                            type="text"
+                            className="p-3 md:p-4 rounded-xl text-sm md:text-base bg-slate-100 font-semibold my-1 w-full"
+                            placeholder="Enter Name"
+                        />
+                        <input
                             type="email"
                             className="p-3 md:p-4 rounded-xl text-sm md:text-base bg-slate-100 font-semibold my-1 w-full"
                             placeholder="Enter Email"
@@ -64,8 +69,9 @@ const SignUpPage = () => {
                             className="p-3 md:p-4 rounded-xl text-sm md:text-base bg-slate-100 font-semibold my-1 w-full"
                             placeholder="Enter Password"
                         />
-                        <div>
-                            <a className="link link-hover text-sm font-semibold text-sky-600 ml-1">Forgot password?</a>
+                        <div className='flex items-center gap-2 ml-1 mt-4'>
+                            <input type="checkbox" name="" id="" />
+                            <span className="text-sm font-semibold text-slate-600">I agree with the <a className='text-sky-600 link link-hover'>Terms & Conditions</a></span>
                         </div>
                         <button className="bg-secondary hover:bg-slate-500 text-white hover:cursor-pointer text-xs md:text-base rounded-xl mt-4 p-3 md:p-4 w-full">
                             Sign Up
